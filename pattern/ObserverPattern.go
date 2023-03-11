@@ -42,6 +42,6 @@ func (s subscriber) ReactToPublisherMsg(msg string) {
 	fmt.Println("Subscriber with Id: ", s.subscriberId, " received message: ", msg)
 }
 
-func GetName() string {
-	return "This is Sample code for : --Observer Pattern--"
+func GetObserverName(s string) string {
+	return "Code for : -- " + s + " Pattern --"
 }
