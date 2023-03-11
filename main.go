@@ -28,12 +28,11 @@ func main() {
 	publisher.NotifyAll("Hello, This is a message from Publisher")
 
 	/**
-		 * _ = ok
-	 Pattern
-		 * a creation design pattern that allows creating new objects by copying or cloning existing objects.
-		 * It provides a way to create new objects based on an existing object, without specifying the exact class
-		 * of the object that will be created.
-	*/
+	 * Prototype Pattern
+	 * a creation design pattern that allows creating new objects by copying or cloning existing objects.
+	 * It provides a way to create new objects based on an existing object, without specifying the exact class
+	 * of the object that will be created.
+	 */
 
 	name = pattern.GetPrototypeName("Prototype")
 	println("----------------------------------")
@@ -63,4 +62,20 @@ func main() {
 		fmt.Println("Cloned Object Change Properties : ")
 		newCircle.PrintTypeProp()
 	}
+
+	/**
+	 * SingletonPattern
+	 * a design pattern that restricts the instantiation of a class to one object.
+	 * This is useful when exactly one object is needed to coordinate actions across the system.
+	 */
+
+	name = pattern.GetSingletonName("Singleton")
+	println("----------------------------------")
+	println(name)
+	println("----------------------------------")
+
+	for i := 0; i < 3; i++ {
+		go pattern.GetConfigInstance()
+	}
+	fmt.Scanln()
 }
