@@ -4,20 +4,20 @@
 This is a simple project to learn GO.
 Mostly talking about the Patterns and the best practices.
 
-## Patterns
+## The Patterns
 The topics are:
-- [ ] Observer Pattern in GO
-- [ ] Prototype Pattern in GO
-- [ ] Singleton Pattern in GO
-- [ ] Strategy Pattern in GO
+- `Observer Pattern` in `GO`
+- `Prototype Pattern` in `GO`
+- `Singleton Pattern` in `GO`
+- `Strategy Pattern` in `GO`
 
 ## Installation
-```bash
+```
 git clone https://github.com/ivandi1980/my-go.git
 ```
 
 ## Usage
-```bash
+```
 go run main.go
 ```
 
