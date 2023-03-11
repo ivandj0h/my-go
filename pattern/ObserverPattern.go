@@ -43,5 +43,5 @@ func (s subscriber) ReactToPublisherMsg(msg string) {
 }
 
 func GetName() string {
-	return "Observer Pattern"
+	return "This is Sample code for : --Observer Pattern--"
 }
