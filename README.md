@@ -1,8 +1,8 @@
-# My GO
+# My GO Pattern Project
 
 ## Description
-This is a simple project to learn GO.
-Mostly talking about the Patterns and the best practices.
+This is a simple project to learn `Pattern` in `GO`.
+Here we're talking about `the Patterns` and `the best practices` how to do it.
 
 ## The Patterns
 The topics are:
