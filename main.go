@@ -78,4 +78,30 @@ func main() {
 		go pattern.GetConfigInstance()
 	}
 	fmt.Scanln()
+
+	/**
+	 * Strategy Pattern
+	 * a behavioral design pattern that lets you define a family of algorithms,
+	 * put each of them into a separate class and make their objects interchangeable.
+	 */
+
+	name = pattern.GetStrategyName("Strategy")
+	println("----------------------------------")
+	println(name)
+	println("----------------------------------")
+
+	// Strategy Pattern for MySql Database
+	MySqlConnection := pattern.MySqlConnection{ConnectionString: "MySql Database has been Connected"}
+	con := pattern.DBconnection{Db: MySqlConnection}
+	con.DBConnect()
+
+	// Strategy Pattern for Postgres Database
+	pgConnection := pattern.PostgreSqlConnection{ConnectionString: "Postgres Database has been Connected"}
+	con = pattern.DBconnection{Db: pgConnection}
+	con.DBConnect()
+
+	// Strategy Pattern for Mongo Database
+	mongoConnection := pattern.MongoDbConnection{ConnectionString: "Mongo Database has been Connected"}
+	con = pattern.DBconnection{Db: mongoConnection}
+	con.DBConnect()
 }
